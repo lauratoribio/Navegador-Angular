@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { FirstSectionComponent } from './first-section/first-section.component';
+import { SearcherComponent } from './searcher/searcher.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    FirstSectionComponent
+    SearcherComponent
   ],
   imports: [
     BrowserModule

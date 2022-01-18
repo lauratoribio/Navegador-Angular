@@ -1,0 +1,53 @@
+@import "../../styles/variables";
+
+.searchSection {
+  min-height: 87vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    color: whitesmoke;
+    font-size: 4rem;
+    line-height: 3.5rem;
+    text-align: center;
+    margin: 2rem 1rem;
+  }
+
+  .searcher {
+    display: flex;
+    border-radius: 50px;
+    margin-bottom: 2.5rem;
+
+    &__input {
+      width: 40vw;
+      padding: 0.5rem 1.5rem;
+      background-color: transparent;
+      border: solid 1px whitesmoke;
+      border-radius: 50px;
+      margin-right: 1rem;
+      &:focus {
+        font-family: $font1;
+        font-weight: 400;
+        outline: none;
+        border: solid 1px whitesmoke;
+        color: whitesmoke;
+        font-size: 1.2rem;
+      }
+
+    }
+
+    &__button {
+      background-color: whitesmoke;
+      font-family: $font1;
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #333;
+      padding: 0.5rem 1.2rem;
+      border-radius: 50px;
+      border: solid 1px transparent;
+      cursor: pointer;
+    }
+  }
+}
