@@ -1,20 +1,27 @@
-<div class="searchSection">
-  <h2>Search your music!</h2>
-<div class="searcher">
 
+  <h2>User List</h2>
+<div class="container">
+  <ul class="userList">
+    <li class="userList-item" *ngFor="let item of userList">
+      <img class="userList-item__img" [src]="item.avatar" alt="">
+      <p class="userList-item__name">{{ item.first_name}} {{ item.last_name }}</p>
+      <p class="userList-item__email">{{ item.email }}</p>
+    </li>
+  </ul>
+</div>
+<!-- 
   <label for="search"></label>
   <input
-   type="test"
+   type="text"
    name="search"
    id="search"
    class="searcher__input"
+   placeholder="Type an artist, album, song, ..."
   />
   <button
    class="searcher__button"
    type="button"
-   placeholder="Type an artist, album, song, ..."
   >
    Search
-  </button>
- </div>
-</div>
+  </button> -->
+ 

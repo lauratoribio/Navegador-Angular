@@ -1,3 +1,5 @@
+import { SearcherService } from './searcher.service';
+import { UserInterface } from './../models/user.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearcherComponent implements OnInit {
 
-  constructor() { }
+  public userList: UserInterface[]
+
+  constructor(private SearcherService: SearcherService) { }
 
   ngOnInit(): void {
+    this.getUserList()
+  }
+
+  private getUserList(): void {
+    this.SearcherService.getUsers().subscribe((list: UserInterface[]) => {
+      this.userList = list
+    })
   }
 
 }

@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    padding: 1rem 2rem;
+    &__copyright {
+     text-align: center;
+     color: white;
+     font-size: 1rem;
+    }
+  }
